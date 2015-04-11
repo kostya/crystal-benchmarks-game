@@ -1,0 +1,7 @@
+.crystal
+*.out
+.todo
+*.txt
+*.swp
+*.class
+bin_*
