@@ -35,6 +35,14 @@ sh run.sh
 | Crystal         | 5.91    | 1.3        |
 | Ruby            | 148.51  | 144.5      |
 
+### Knucleotide
+
+| Language        | Time,s  | Memory, Mb |
+| --------------- | ------- | ---------- |
+| C               | -       | -          |
+| Crystal         | 6.86    | 32.8       |
+| Ruby            | 42.58   | 47.7       |
+
 ### Mandelbrot
 
 | Language        | Time,s  | Memory, Mb |
