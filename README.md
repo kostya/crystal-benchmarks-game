@@ -39,8 +39,8 @@ sh run.sh
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | -       | -          |
-| Crystal         | 6.86    | 32.8       |
+| Go              | 3.86    | 31.6       |
+| Crystal         | 6.90    | 25.1       |
 | Ruby            | 42.58   | 47.7       |
 
 ### Mandelbrot
@@ -108,3 +108,4 @@ sh run.sh
 * `Crystal 0.6.1 [48461ba] (Wed Mar  4 23:06:07 UTC 2015)`
 * `gcc (Ubuntu/Linaro 4.6.4-1ubuntu1~12.04) 4.6.4`
 * `ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-linux]`
+* `go version go1.3.1 linux/amd64`
