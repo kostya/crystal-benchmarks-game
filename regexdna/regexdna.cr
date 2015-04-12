@@ -1,7 +1,12 @@
-seq = STDIN.read
-ilen = seq.length
-seq = seq.split(/>.*?\n/).join
-seq = seq.delete { |c| c == '\n' }
+seq = StringIO.new
+
+ilen = 0
+BufferedIO.new(STDIN).each_line do |line|
+  ilen += line.length
+  seq << line.chomp unless line.starts_with? '>'
+end
+
+seq = seq.to_s
 clen = seq.length
 
 [
