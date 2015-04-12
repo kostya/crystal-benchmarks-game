@@ -102,7 +102,6 @@ sh run.sh
 ## TODO
 * theadring
 * chameneosredux
-* knucleotide
 
 ## Versions
 * `Crystal 0.6.1 [48461ba] (Wed Mar  4 23:06:07 UTC 2015)`
