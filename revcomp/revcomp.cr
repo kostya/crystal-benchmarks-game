@@ -4,17 +4,17 @@ def revcomp(seq)
   0.step(stringlen, 60) { |x| puts seq[x...x + 60] }
 end
 
-seq = ""
+seq = StringIO.new
 
 STDIN.each_line do |line|
   if line.starts_with? '>'
     if !seq.empty?
-      revcomp(seq)
-      seq = ""
+      revcomp(seq.to_s)
+      seq.clear
     end
     puts(line)
   else
-    seq += line.chomp
+    seq << line.chomp
   end
 end
-revcomp(seq)
+revcomp(seq.to_s)
