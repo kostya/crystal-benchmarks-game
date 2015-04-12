@@ -11,9 +11,9 @@ end
 def make_cumulative(genelist)
   cp = 0.0_f64
   genelist.length.times do |i|
-  	c, p = genelist[i]
-  	cp += p
-  	genelist[i] = {c, cp}
+    c, p = genelist[i]
+    cp += p
+    genelist[i] = {c, cp}
   end
 end
 
@@ -25,12 +25,12 @@ def select_random(genelist)
   hi = genelist.length - 1
 
   while hi > lo + 1
-  	i = (hi + lo) / 2
-  	if r < genelist[i][1]
-  	  hi = i
-  	else
-  	  lo = i
-  	end
+    i = (hi + lo) / 2
+    if r < genelist[i][1]
+      hi = i
+    else
+      lo = i
+    end
   end
   genelist[hi][0]
 end
@@ -42,13 +42,13 @@ def make_random_fasta(id, desc, genelist, n)
   puts ">#{id} #{desc}"
 
   while todo > 0
-  	m = (todo < LINE_LENGTH) ? todo : LINE_LENGTH
-  	pick = String.new(m) do |buffer|
-  	  m.times { |i| buffer[i] = select_random(genelist).ord.to_u8 }
-  	  {m, m}
-  	end
-  	puts(pick)
-  	todo -= LINE_LENGTH
+    m = (todo < LINE_LENGTH) ? todo : LINE_LENGTH
+    pick = String.new(m) do |buffer|
+      m.times { |i| buffer[i] = select_random(genelist).ord.to_u8 }
+      {m, m}
+    end
+    puts(pick)
+    todo -= LINE_LENGTH
   end
 end
 
@@ -59,7 +59,7 @@ def make_repeat_fasta(id, desc, s, n)
 
   puts ">#{id} #{desc}"
   while todo > 0
-  	m = (todo < LINE_LENGTH) ? todo : LINE_LENGTH
+    m = (todo < LINE_LENGTH) ? todo : LINE_LENGTH
 
     while m >= kn - k
       print(s[k..-1])
@@ -70,7 +70,7 @@ def make_repeat_fasta(id, desc, s, n)
     puts(s[k...k + m])
     k += m
 
-  	todo -= LINE_LENGTH
+    todo -= LINE_LENGTH
   end
 end
 
