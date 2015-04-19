@@ -86,9 +86,9 @@ sh run.sh
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 0.10    | 1.6        |
-| Crystal         | 0.93    | 84.7       |
-| Ruby            | 1.20    | 20.5       |
+| C               | 0.42    | 37.0       |
+| Crystal         | 3.79    | 482.5      |
+| Ruby            | 4.60    | 74.2       |
 
 ### Spectralnorm
 

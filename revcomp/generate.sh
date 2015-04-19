@@ -1,1 +1,1 @@
-../fasta/bin_c 2500000 > 1.txt
+../fasta/bin_c 10000000 > 1.txt
