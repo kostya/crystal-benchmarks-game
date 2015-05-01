@@ -40,7 +40,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | Go              | 3.86    | 31.6       |
-| Crystal         | 5.81    | 33.1       |
+| Crystal         | 6.40    | 29.1       |
 | Ruby            | 42.58   | 47.7       |
 
 ### Mandelbrot
