@@ -25,8 +25,7 @@ while true
       ns = ns * 10 + t
       i += 1
       if i % 10 == 0
-        #print "%010d\t:%d\n" % [ns.to_u64, i] # TODO: to_u64 in crystal 0.6.2
-        puts "#{ns} - #{i}"
+        print "%010d\t:%d\n" % {ns.to_u64, i}
         ns = 0
       end
       break if i >= N

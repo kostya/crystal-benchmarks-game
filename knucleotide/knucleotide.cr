@@ -12,8 +12,7 @@ end
 def sort_by_freq(seq, length)
   n, table = frecuency(seq, length)
   table.to_a.sort { |a, b| b[1] <=> a[1] }.each do |v|
-    #puts "%s %.3f" % {v[0].upcase, ((v[1] * 100).to_f / n)} # TODO: use after crystal 0.6.2
-    puts "#{v[0].upcase} #{(v[1] * 100).to_f / n}"
+    puts "%s %.3f" % {v[0].upcase, ((v[1] * 100).to_f / n)}
   end
   puts
 end
