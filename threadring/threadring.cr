@@ -35,5 +35,5 @@ THREAD_COUNT.times do |i|
   spawn { receivers[i].messageloop }
 end
 
-receivers[0].put(ARGV[0].to_i)
+receivers[0].put((ARGV[0]? || 1000).to_i)
 puts $res.receive
