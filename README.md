@@ -98,9 +98,17 @@ sh run.sh
 | Crystal         | 11.66   | 1.8        |
 | Ruby            | 359.02  | 7.4        |
 
+### Threadring
+
+| Language        | Time,s  | Memory, Mb |
+| --------------- | ------- | ---------- |
+| Go              | 1.58    | 3.1        |
+| Erlang          | 2.40    | 9.8        |
+| Crystal         | 5.16    | 7.3        |
+| Scala           | 20.08   | 1.6        |
+| Ruby            | 47.97   | 19.0       |
 
 ## TODO
-* theadring
 * chameneosredux
 
 ## Versions
@@ -108,3 +116,5 @@ sh run.sh
 * `gcc (Ubuntu/Linaro 4.6.4-1ubuntu1~12.04) 4.6.4`
 * `ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-linux]`
 * `go version go1.3.1 linux/amd64`
+* `Erlang R14B04 (erts-5.8.5) [source] [64-bit] [smp:8:8] [rq:8] [async-threads:0] [kernel-poll:false]`
+* `Scala code runner version 2.11.1 -- Copyright 2002-2013, LAMP/EPFL`

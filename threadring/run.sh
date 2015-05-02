@@ -1,4 +1,4 @@
-readonly NUM=1000000
+readonly NUM=5000000
 echo Crystal
 ../xtime.rb ./bin_cr $NUM
 echo Go
