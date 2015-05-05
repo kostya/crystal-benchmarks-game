@@ -21,11 +21,21 @@ clen = seq.length
   /agggtaa[cgt]|[acg]ttaccct/i
 ].each {|f| puts "#{f.source} #{seq.scan(f).size}" }
 
-{
-'B' => "(c|g|t)", 'D' => "(a|g|t)", 'H' => "(a|c|t)", 'K' => "(g|t)",
-'M' => "(a|c)", 'N' => "(a|c|g|t)", 'R' => "(a|g)", 'S' => "(c|t)",
-'V' => "(a|c|g)", 'W' => "(a|t)", 'Y' => "(c|t)"
-}.each { |f,r| seq = seq.gsub(f, r) }
+hash = {
+  "B" => "(c|g|t)",
+  "D" => "(a|g|t)",
+  "H" => "(a|c|t)",
+  "K" => "(g|t)",
+  "M" => "(a|c)",
+  "N" => "(a|c|g|t)",
+  "R" => "(a|g)",
+  "S" => "(c|t)",
+  "V" => "(a|c|g)",
+  "W" => "(a|t)",
+  "Y" => "(c|t)"
+}
+
+seq = seq.gsub(/B|D|H|K|M|N|R|S|V|W|Y/, hash)
 
 puts
 puts ilen
