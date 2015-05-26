@@ -40,7 +40,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | Go              | 3.86    | 31.6       |
-| Crystal         | 6.40    | 29.1       |
+| Crystal         | 6.25    | 30.7       |
 | Ruby            | 42.58   | 47.7       |
 
 ### Mandelbrot
@@ -80,14 +80,14 @@ sh run.sh
 | --------------- | ------- | ---------- |
 | C               | 2.84    | 10.4       |
 | Ruby            | 3.45    | 16.6       |
-| Crystal         | 6.78    | 54.1       |
+| Crystal         | 4.28    | 23.3       |
 
 ### Revcomp
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 0.42    | 37.0       |
-| Crystal         | 3.47    | 520.9      |
+| Crystal         | 4.30    | 506.6      |
 | Ruby            | 4.60    | 74.2       |
 
 ### Spectralnorm
@@ -112,7 +112,7 @@ sh run.sh
 * chameneosredux
 
 ## Versions
-* `Crystal 0.7.1 [86d387c] (Fri May  1 01:08:43 UTC 2015)`
+* `Crystal 0.7.2 [3034ebb] (Tue May 26 16:40:34 UTC 2015)`
 * `gcc (Ubuntu/Linaro 4.6.4-1ubuntu1~12.04) 4.6.4`
 * `ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-linux]`
 * `go version go1.3.1 linux/amd64`
