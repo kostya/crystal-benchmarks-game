@@ -25,7 +25,7 @@ end
 seq = StringIO.new
 three = false
 
-BufferedIO.new(STDIN).each_line do |line|
+STDIN.each_line do |line|
   if line.starts_with?(">THREE")
     three = true
     next

@@ -2,7 +2,7 @@
 
 Compared to C, and Ruby implementations from http://benchmarksgame.alioth.debian.org/ .
 
-Running on Intel(R) Xeon(R) CPU E5504 @ 2.00GHz, Ubuntu 12.04.1 LTS
+Running on Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (Ubuntu 14.04.1 LTS x86_64)
 
 To run and build:
 ```
@@ -15,106 +15,106 @@ sh run.sh
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 7.85    | 32.6       |
-| Crystal         | 11.34   | 107.7      |
-| Ruby            | 54.08   | 115.5      |
+| C               | 5.08    | 32.4       |
+| Crystal         | 6.02    | 107.6      |
+| Ruby            | 27.92   | 115.5      |
 
 ### Fannkuchredux
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 5.65    | 0.3        |
-| Crystal         | 10.26   | 1.2        |
-| Ruby            | 222.33  | 7.0        |
+| C               | 2.83    | 0.4        |
+| Crystal         | 4.48    | 1.2        |
+| Ruby            | 130.40  | 18.2       |
 
 ### Fasta
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 4.59    | 0.3        |
-| Crystal         | 5.91    | 1.4        |
-| Ruby            | 148.51  | 144.5      |
+| C               | 2.21    | 0.4        |
+| Crystal         | 4.08    | 1.4        |
+| Ruby            | 81.69   | 162.4      |
 
 ### Knucleotide
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| Go              | 3.86    | 31.6       |
-| Crystal         | 6.25    | 30.7       |
-| Ruby            | 42.58   | 47.7       |
+| Go              | 1.70    | 31.8       |
+| Crystal         | 2.76    | 28.5       |
+| Ruby            | 21.82   | 89.2       |
 
 ### Mandelbrot
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 16.22   | 0.3        |
-| Crystal         | 17.32   | 1.1        |
-| Ruby            | 240.61  | 6.9        |
+| C               | 10.13   | 0.4        |
+| Crystal         | 10.55   | 1.2        |
+| Ruby            | 140.04  | 17.9       |
 
 ### Meteor
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 0.10    | 0.3        |
-| Crystal         | 0.27    | 1.2        |
+| C               | 0.06    | 0.6        |
+| Crystal         | 0.15    | 1.4        |
 
 ### NBody
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 3.52    | 0.3        |
-| Crystal         | 4.15    | 1.1        |
-| Ruby            | 157.62  | 7.0        |
+| C               | 1.59    | 0.4        |
+| Crystal         | 1.80    | 1.2        |
+| Ruby            | 91.01   | 7.3        |
 
 ### Pidigits
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 2.11    | 0.9        |
-| Ruby            | 7.69    | 141.9      |
-| Crystal         | 9.56    | 4.3        |
+| C               | 0.85    | 0.9        |
+| Crystal         | 3.56    | 3.5        |
+| Ruby            | 6.35    | 125.8      |
 
 ### Regexdna
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 2.84    | 10.4       |
-| Ruby            | 3.45    | 16.6       |
-| Crystal         | 4.28    | 23.3       |
+| Ruby            | 1.96    | 17.9       |
+| C               | 2.07    | 12.2       |
+| Crystal         | 2.16    | 29.4       |
 
 ### Revcomp
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 0.42    | 37.0       |
-| Crystal         | 4.30    | 506.6      |
-| Ruby            | 4.60    | 74.2       |
+| C               | 0.23    | 3.6        |
+| Ruby            | 2.19    | 91.1       |
+| Crystal         | 2.66    | 464.8      |
 
 ### Spectralnorm
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 11.23   | 0.4        |
-| Crystal         | 11.66   | 1.8        |
-| Ruby            | 359.02  | 7.4        |
+| C               | 6.72    | 0.4        |
+| Crystal         | 6.84    | 1.7        |
+| Ruby            | 220.34  | 11.4       |
 
 ### Threadring
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| Go              | 1.58    | 3.1        |
-| Erlang          | 2.40    | 9.8        |
-| Crystal         | 5.16    | 7.3        |
-| Scala           | 20.08   | 1.6        |
-| Ruby            | 47.97   | 19.0       |
+| Go              | 1.48    | 2.0        |
+| Erlang          | 1.97    | 17.1       |
+| Crystal         | 6.09    | 5.3        |
+| Scala           | 6.42    | 1.5        |
+| Ruby            | 41.73   | 30.0       |
 
 ## TODO
 * chameneosredux
 
 ## Versions
-* `Crystal 0.7.2 [3034ebb] (Tue May 26 16:40:34 UTC 2015)`
-* `gcc (Ubuntu/Linaro 4.6.4-1ubuntu1~12.04) 4.6.4`
-* `ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-linux]`
-* `go version go1.3.1 linux/amd64`
-* `Erlang R14B04 (erts-5.8.5) [source] [64-bit] [smp:8:8] [rq:8] [async-threads:0] [kernel-poll:false]`
-* `Scala code runner version 2.11.1 -- Copyright 2002-2013, LAMP/EPFL`
+* `Crystal 0.7.4 [42efdbf] (Wed Jun 24 01:02:21 UTC 2015)`
+* `gcc (Ubuntu 4.8.2-19ubuntu1) 4.8.2`
+* `ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]`
+* `go version go1.4 linux/amd64`
+* `Erlang R16B03 (erts-5.10.4) [source] [64-bit] [smp:4:4] [async-threads:10] [kernel-poll:false]`
+* `Scala code runner version 2.11.6 -- Copyright 2002-2013, LAMP/EPFL`

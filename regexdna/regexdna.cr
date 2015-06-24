@@ -1,7 +1,7 @@
 seq = StringIO.new
 
 ilen = 0
-BufferedIO.new(STDIN).each_line do |line|
+STDIN.each_line do |line|
   ilen += line.length
   seq << line.chomp unless line.starts_with? '>'
 end

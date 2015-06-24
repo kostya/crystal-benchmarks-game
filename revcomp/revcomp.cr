@@ -6,7 +6,7 @@ end
 
 seq = StringIO.new
 
-BufferedIO.new(STDIN).each_line do |line|
+STDIN.each_line do |line|
   if line.starts_with? '>'
     if !seq.empty?
       revcomp(seq.to_s)
