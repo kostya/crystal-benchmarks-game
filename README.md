@@ -24,7 +24,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 2.83    | 0.4        |
-| Crystal         | 4.48    | 1.2        |
+| Crystal         | 4.21    | 1.2        |
 | Ruby            | 130.40  | 18.2       |
 
 ### Fasta
@@ -63,7 +63,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 1.59    | 0.4        |
-| Crystal         | 1.80    | 1.2        |
+| Crystal         | 1.74    | 1.2        |
 | Ruby            | 91.01   | 7.3        |
 
 ### Pidigits
@@ -112,7 +112,7 @@ sh run.sh
 * chameneosredux
 
 ## Versions
-* `Crystal 0.7.4 [42efdbf] (Wed Jun 24 01:02:21 UTC 2015)`
+* `Crystal 0.7.5 [2a33a87] (Thu Jul 30 17:24:52 UTC 2015)`
 * `gcc (Ubuntu 4.8.2-19ubuntu1) 4.8.2`
 * `ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]`
 * `go version go1.4 linux/amd64`
