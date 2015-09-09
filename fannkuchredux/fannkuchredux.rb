@@ -55,4 +55,4 @@ end
 
 n = (ARGV[0] || 1).to_i
 sum, flips = fannkuch(n)
-printf "%d\nPfannkuchen(%d) = %d\n", sum, n, flips
+puts "#{sum}\nPfannkuchen(#{n}) = #{flips}"
