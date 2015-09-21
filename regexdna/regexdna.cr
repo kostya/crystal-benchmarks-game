@@ -2,12 +2,12 @@ seq = StringIO.new
 
 ilen = 0
 STDIN.each_line do |line|
-  ilen += line.length
+  ilen += line.size
   seq << line.chomp unless line.starts_with? '>'
 end
 
 seq = seq.to_s
-clen = seq.length
+clen = seq.size
 
 [
   /agggtaaa|tttaccct/i,
@@ -40,4 +40,4 @@ seq = seq.gsub(/B|D|H|K|M|N|R|S|V|W|Y/, hash)
 puts
 puts ilen
 puts clen
-puts seq.length
+puts seq.size

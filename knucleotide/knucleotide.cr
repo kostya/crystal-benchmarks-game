@@ -1,5 +1,5 @@
 def frecuency(seq, length)
-  n = seq.length - length + 1
+  n = seq.size - length + 1
   table = Hash(String, Int32).new { 0 }
   (0 ... length).each do |f|
     (f ... n).step(length) do |i|
@@ -18,7 +18,7 @@ def sort_by_freq(seq, length)
 end
 
 def find_seq(seq, s)
-  n, table = frecuency(seq, s.length)
+  n, table = frecuency(seq, s.size)
   puts "#{table[s].to_s}\t#{s.upcase}"
 end
 

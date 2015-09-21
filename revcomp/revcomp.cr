@@ -1,6 +1,6 @@
 def revcomp(seq)
   seq = seq.reverse.tr("wsatugcyrkmbdhvnATUGCYRKMBDHVN", "WSTAACGRYMKVHDBNTAACGRYMKVHDBN")
-  stringlen = seq.length - 1
+  stringlen = seq.size - 1
   0.step(stringlen, 60) { |x| puts seq[x...x + 60] }
 end
 

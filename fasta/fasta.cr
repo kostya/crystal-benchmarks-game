@@ -10,7 +10,7 @@ end
 
 def make_cumulative(genelist)
   cp = 0.0_f64
-  genelist.length.times do |i|
+  genelist.size.times do |i|
     c, p = genelist[i]
     cp += p
     genelist[i] = {c, cp}
@@ -22,7 +22,7 @@ def select_random(genelist)
   return genelist[0][0] if r < genelist[0][1]
 
   lo = 0
-  hi = genelist.length - 1
+  hi = genelist.size - 1
 
   while hi > lo + 1
     i = (hi + lo) / 2
@@ -55,7 +55,7 @@ end
 def make_repeat_fasta(id, desc, s, n)
   todo = n
   k = 0
-  kn = s.length
+  kn = s.size
 
   puts ">#{id} #{desc}"
   while todo > 0
