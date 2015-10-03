@@ -4,3 +4,6 @@ echo C
 ../xtime.rb ./bin_c 18
 echo Ruby
 ../xtime.rb ruby binarytrees.rb 18
+echo Java
+javac binarytrees.java
+../xtime.rb java binarytrees 18
