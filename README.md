@@ -15,6 +15,7 @@ sh run.sh
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
+| Java            | 0.59    | 282.2      |
 | C               | 5.08    | 32.4       |
 | Crystal         | 6.14    | 107.6      |
 | Ruby            | 27.92   | 115.5      |
@@ -118,3 +119,4 @@ sh run.sh
 * `go version go1.4 linux/amd64`
 * `Erlang R16B03 (erts-5.10.4) [source] [64-bit] [smp:4:4] [async-threads:10] [kernel-poll:false]`
 * `Scala code runner version 2.11.6 -- Copyright 2002-2013, LAMP/EPFL`
+* `java version "1.8.0_45 Java(TM) SE Runtime Environment (build 1.8.0_45-b14) Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)`

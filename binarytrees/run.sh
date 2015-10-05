@@ -5,5 +5,4 @@ echo C
 echo Ruby
 ../xtime.rb ruby binarytrees.rb 18
 echo Java
-javac binarytrees.java
 ../xtime.rb java binarytrees 18
