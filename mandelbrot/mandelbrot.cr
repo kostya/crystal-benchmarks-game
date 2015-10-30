@@ -3,7 +3,7 @@ STDOUT.print("P4\n#{w} #{h}\n")
 
 bit_num = 0
 byte_acc = 0_u8
-ITER = 50
+ITER  =  50
 LIMIT = 2.0
 
 h.times do |y|

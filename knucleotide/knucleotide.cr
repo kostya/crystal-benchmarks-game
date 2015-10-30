@@ -1,8 +1,8 @@
 def frecuency(seq, length)
   n = seq.size - length + 1
   table = Hash(String, Int32).new { 0 }
-  (0 ... length).each do |f|
-    (f ... n).step(length) do |i|
+  (0...length).each do |f|
+    (f...n).step(length) do |i|
       table[seq.byte_slice(i, length)] += 1
     end
   end

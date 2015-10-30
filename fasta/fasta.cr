@@ -1,8 +1,9 @@
 IM = 139968
-IA = 3877
-IC = 29573
+IA =   3877
+IC =  29573
 
 $last = 42
+
 def gen_random(max)
   $last = ($last * IA + IC) % IM
   max * $last / IM.to_f64
@@ -75,25 +76,25 @@ def make_repeat_fasta(id, desc, s, n)
 end
 
 iub = [
-    { 'a', 0.27 },
-    { 'c', 0.12 },
-    { 'g', 0.12 },
-    { 't', 0.27 },
+  {'a', 0.27},
+  {'c', 0.12},
+  {'g', 0.12},
+  {'t', 0.27},
 
-    { 'B', 0.02 },
-    { 'D', 0.02 },
-    { 'H', 0.02 },
-    { 'K', 0.02 },
-    { 'M', 0.02 },
-    { 'N', 0.02 },
-    { 'R', 0.02 },
-    { 'S', 0.02 },
-    { 'V', 0.02 },
-    { 'W', 0.02 },
-    { 'Y', 0.02 }
+  {'B', 0.02},
+  {'D', 0.02},
+  {'H', 0.02},
+  {'K', 0.02},
+  {'M', 0.02},
+  {'N', 0.02},
+  {'R', 0.02},
+  {'S', 0.02},
+  {'V', 0.02},
+  {'W', 0.02},
+  {'Y', 0.02},
 ]
 
-homosapiens = [ { 'a', 0.3029549426680 }, { 'c', 0.1979883004921 }, { 'g', 0.1975473066391 }, { 't', 0.3015094502008 } ]
+homosapiens = [{'a', 0.3029549426680}, {'c', 0.1979883004921}, {'g', 0.1975473066391}, {'t', 0.3015094502008}]
 alu = "GGCCGGGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGGCGGGCGGATCACCTGAGGTCAGGAGTTCGAGACCAGCCTGGCCAACATGGTGAAACCCCGTCTCTACTAAAAATACAAAAATTAGCCGGGCGTGGTGGCGCGCGCCTGTAATCCCAGCTACTCGGGAGGCTGAGGCAGGAGAATCGCTTGAACCCGGGAGGCGGAGGTTGCAGTGAGCCGAGATCGCGCCACTGCACTCCAGCCTGGGCGACAGAGCGAGACTCCGTCTCAAAAA"
 
 n = (ARGV[0]? || 1000).to_i

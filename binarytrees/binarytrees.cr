@@ -2,6 +2,7 @@
 
 class Node
   property a, b, c
+
   def initialize(@a, @b, @c)
   end
 end
