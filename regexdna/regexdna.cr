@@ -1,4 +1,4 @@
-seq = StringIO.new
+seq = MemoryIO.new
 
 ilen = 0
 STDIN.each_line do |line|

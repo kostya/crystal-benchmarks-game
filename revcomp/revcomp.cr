@@ -4,7 +4,7 @@ def revcomp(seq)
   0.step(stringlen, 60) { |x| puts seq[x...x + 60] }
 end
 
-seq = StringIO.new
+seq = MemoryIO.new
 
 STDIN.each_line do |line|
   if line.starts_with? '>'

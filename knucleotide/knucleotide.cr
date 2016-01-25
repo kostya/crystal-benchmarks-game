@@ -22,7 +22,7 @@ def find_seq(seq, s)
   puts "#{table[s].to_s}\t#{s.upcase}"
 end
 
-seq = StringIO.new
+seq = MemoryIO.new
 three = false
 
 STDIN.each_line do |line|
