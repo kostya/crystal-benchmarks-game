@@ -108,6 +108,9 @@ sh run.sh
 | Erlang          | 1.89    | 17.1       |
 | Scala           | 6.42    | 1.5        |
 | Ruby            | 41.73   | 30.0       |
+| JRuby9K         | 51.48   | 280.6      |
+| JRuby           | 54.86   | 192.7      |
+| Rbx             | 109.96  | 111.5      |
 
 ## TODO
 * chameneosredux
@@ -120,3 +123,6 @@ sh run.sh
 * `Erlang/OTP 18 [erts-7.2] [source] [64-bit] [smp:4:4] [async-threads:10] [kernel-poll:false]`
 * `Scala code runner version 2.11.6 -- Copyright 2002-2013, LAMP/EPFL`
 * `java version "1.8.0_45 Java(TM) SE Runtime Environment (build 1.8.0_45-b14) Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)`
+* jruby 1.7.20 (1.9.3p551) 2015-05-04 3086e6a on Java HotSpot(TM) 64-Bit Server VM 1.8.0_45-b14 +jit [linux-amd64]
+* jruby 9.0.0.0 (2.2.2) 2015-07-21 e10ec96 Java HotSpot(TM) 64-Bit Server VM 25.45-b02 on 1.8.0_45-b14 +jit [linux-amd64]
+* rubinius 2.2.10 (2.1.0 bf61ae2e 2014-06-27 JI) [x86_64-linux-gnu]

@@ -29,6 +29,7 @@ class Receiver
       hopsRemaining = @mailbox.pop
       if(hopsRemaining == 0)
         print @name, "\n"
+        puts Time.now - $start_at
         exit(0)
       end
       @next.put(hopsRemaining - 1)
@@ -39,6 +40,7 @@ end
 ##########
 #  Main  #
 ##########
+$start_at = Time.now
 receivers = []
 for i in 0..THREAD_COUNT-1
   receivers[i] = Receiver.new(i+1)
