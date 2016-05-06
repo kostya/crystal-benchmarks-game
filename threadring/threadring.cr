@@ -1,11 +1,11 @@
 THREAD_COUNT = 503
 
 class Receiver
-  def initialize(@name)
+  def initialize(@name : Int32)
     @mailbox = Channel(Int32).new
   end
 
-  def next=(n)
+  def next=(n : Receiver)
     @next = n
   end
 

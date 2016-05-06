@@ -3,7 +3,7 @@
 class Node
   property a, b, c
 
-  def initialize(@a, @b, @c)
+  def initialize(@a : Node?, @b : Int32, @c : Node?)
   end
 end
 

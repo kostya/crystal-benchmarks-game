@@ -1,4 +1,4 @@
-require "big_int/big_int"
+require "big_int"
 N = (ARGV[0]? || 100).to_i
 
 i = 0
