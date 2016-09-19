@@ -96,7 +96,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 6.72    | 0.4        |
-| Crystal         | 15.75   | 1.8        |
+| Crystal         | 6.91    | 1.8        |
 | Ruby            | 220.34  | 11.4       |
 
 ### Threadring
