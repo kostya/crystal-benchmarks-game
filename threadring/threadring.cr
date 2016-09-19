@@ -17,7 +17,7 @@ class Receiver
     while true
       msg = @mailbox.receive
       if msg == 0
-        $res.send(@name)
+        RES.send(@name)
       elsif nxt = @next
         nxt.put(msg - 1)
       end
@@ -25,7 +25,7 @@ class Receiver
   end
 end
 
-$res = Channel(Int32).new
+RES = Channel(Int32).new
 
 receivers = Array.new(THREAD_COUNT) { |i| Receiver.new(i + 1) }
 (0...THREAD_COUNT - 1).each { |i| receivers[i].next = receivers[i + 1] }
@@ -36,4 +36,4 @@ THREAD_COUNT.times do |i|
 end
 
 receivers[0].put((ARGV[0]? || 1000).to_i)
-puts $res.receive
+puts RES.receive

@@ -2,11 +2,19 @@ IM = 139968
 IA =   3877
 IC =  29573
 
-$last = 42
+class Last
+  def self.last
+    @@last ||= 42
+  end
+
+  def self.last=(x)
+    @@last = x
+  end
+end
 
 def gen_random(max)
-  $last = ($last * IA + IC) % IM
-  max * $last / IM.to_f64
+  Last.last = (Last.last * IA + IC) % IM
+  max * Last.last / IM.to_f64
 end
 
 def make_cumulative(genelist)

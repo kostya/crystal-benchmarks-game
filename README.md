@@ -17,7 +17,7 @@ sh run.sh
 | --------------- | ------- | ---------- |
 | Java            | 0.59    | 282.2      |
 | C               | 5.08    | 32.4       |
-| Crystal         | 6.23    | 107.6      |
+| Crystal         | 8.11    | 107.6      |
 | Ruby            | 27.92   | 115.5      |
 
 ### Fannkuchredux
@@ -25,7 +25,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 2.83    | 0.4        |
-| Crystal         | 3.76    | 1.0        |
+| Crystal         | 4.22    | 1.3        |
 | Ruby            | 130.40  | 18.2       |
 
 ### Fasta
@@ -33,7 +33,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 2.21    | 0.4        |
-| Crystal         | 5.54    | 1.3        |
+| Crystal         | 4.84    | 1.5        |
 | Ruby            | 81.69   | 162.4      |
 
 ### Knucleotide
@@ -41,7 +41,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | Go              | 1.70    | 31.8       |
-| Crystal         | 2.74    | 37.9       |
+| Crystal         | 3.82    | 37.9       |
 | Ruby            | 21.82   | 89.2       |
 
 ### Mandelbrot
@@ -49,7 +49,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 10.13   | 0.4        |
-| Crystal         | 10.60   | 1.3        |
+| Crystal         | 10.98   | 1.3        |
 | Ruby            | 140.04  | 17.9       |
 
 ### Meteor
@@ -64,7 +64,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 1.59    | 0.4        |
-| Crystal         | 1.80    | 1.3        |
+| Crystal         | 1.93    | 1.3        |
 | Ruby            | 91.01   | 7.3        |
 
 ### Pidigits
@@ -72,7 +72,7 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 0.85    | 0.9        |
-| Crystal         | 3.50    | 3.6        |
+| Crystal         | 3.72    | 4.5        |
 | Ruby            | 6.35    | 125.8      |
 
 ### Regexdna
@@ -81,7 +81,7 @@ sh run.sh
 | --------------- | ------- | ---------- |
 | Ruby            | 1.96    | 17.9       |
 | C               | 2.07    | 12.2       |
-| Crystal         | 2.20    | 31.0       |
+| Crystal         | 2.15    | 24.2       |
 
 ### Revcomp
 
@@ -89,14 +89,14 @@ sh run.sh
 | --------------- | ------- | ---------- |
 | C               | 0.23    | 3.6        |
 | Ruby            | 2.19    | 91.1       |
-| Crystal         | 4.24    | 527.0      |
+| Crystal         | 3.30    | 463.3      |
 
 ### Spectralnorm
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | C               | 6.72    | 0.4        |
-| Crystal         | 6.90    | 1.8        |
+| Crystal         | 15.75   | 1.8        |
 | Ruby            | 220.34  | 11.4       |
 
 ### Threadring
@@ -116,7 +116,7 @@ sh run.sh
 * chameneosredux
 
 ## Versions
-* `Crystal 0.16.0 [fc89c1a] (Thu May  5 17:06:08 UTC 2016)`
+* `Crystal 0.19.2 [d81c32c] (2016-09-16)`
 * `gcc (Ubuntu 4.8.2-19ubuntu1) 4.8.2`
 * `ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]`
 * `go version go1.5.3 linux/amd64`
