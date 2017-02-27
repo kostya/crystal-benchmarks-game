@@ -1,4 +1,4 @@
-seq = MemoryIO.new
+seq = IO::Memory.new
 
 ilen = 0
 STDIN.each_line do |line|
