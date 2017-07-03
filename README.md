@@ -16,8 +16,9 @@ sh run.sh
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
 | Java            | 0.59    | 282.2      |
+| C++             | 2.46    | 33.0       |
+| Crystal         | 3.19    | 46.9       |
 | C               | 5.08    | 32.4       |
-| Crystal         | 8.11    | 107.6      |
 | Ruby            | 27.92   | 115.5      |
 
 ### Fannkuchredux

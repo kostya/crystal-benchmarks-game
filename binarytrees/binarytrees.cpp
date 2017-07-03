@@ -19,8 +19,8 @@ class TreeNode {
 public:
   TreeNode(int anItem, int depth) : item(anItem) {
     if (depth > 0) {
-      left = make_unique<TreeNode>(2 * item - 1, depth - 1);
-      right = make_unique<TreeNode>(2 * item, depth - 1);
+      left = std::unique_ptr<TreeNode>(new TreeNode(2 * item - 1, depth - 1));
+      right = std::unique_ptr<TreeNode>(new TreeNode(2 * item, depth - 1));
     }
   }
 
@@ -32,7 +32,7 @@ public:
   }
 
   static unique_ptr<TreeNode> create(int item, int depth) {
-    return make_unique<TreeNode>(item, depth - 1);
+    return std::unique_ptr<TreeNode>(new TreeNode(item, depth - 1));
   }
 };
 
