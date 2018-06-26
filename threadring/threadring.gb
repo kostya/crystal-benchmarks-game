@@ -35,7 +35,7 @@ end
 
 receivers = []
 THREAD_COUNT.times do |i|
-  r = Receiver.new(i)
+  r = Receiver.new(i + 1)
   receivers[i] = r
   if i > 0
     receivers[i-1].next = r
