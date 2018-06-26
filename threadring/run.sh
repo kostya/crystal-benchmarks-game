@@ -9,3 +9,5 @@ echo Erlang
 ../xtime.rb erl -noshell -run threadring main $NUM
 echo Scala
 ../xtime.rb scala threadring $NUM
+echo Goby
+../xtime.rb goby threadring.gb $NUM
