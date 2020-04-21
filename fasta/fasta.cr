@@ -34,7 +34,7 @@ def select_random(genelist)
   hi = genelist.size - 1
 
   while hi > lo + 1
-    i = (hi + lo) / 2
+    i = (hi + lo) // 2
     if r < genelist[i][1]
       hi = i
     else

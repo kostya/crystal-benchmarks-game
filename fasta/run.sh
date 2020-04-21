@@ -4,3 +4,5 @@ echo C
 ../xtime.rb ./bin_c 15000000 > /dev/null
 echo Ruby
 ../xtime.rb ruby fasta.rb 15000000 > /dev/null
+echo Topaz
+../xtime.rb topaz fasta.rb 15000000 > /dev/null

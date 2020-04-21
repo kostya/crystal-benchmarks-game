@@ -45,7 +45,7 @@ def mask(dy, dx, id, p)
   m = bo(50 + id)
   p.each do |p1|
     y, x = p1
-    x2 = x + dx + (y + (dy % 2)) / 2
+    x2 = x + dx + (y + (dy % 2)) // 2
     return if x2 < 0 || x2 > 4
     y2 = y + dy
     return if y2 < 0 || y2 > 9

@@ -8,3 +8,5 @@ echo Ruby
 ../xtime.rb ruby binarytrees.rb 18
 echo Java
 ../xtime.rb java binarytrees 18
+echo Topaz
+../xtime.rb topaz binarytrees.rb 18

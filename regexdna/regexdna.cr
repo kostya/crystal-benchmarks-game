@@ -10,15 +10,15 @@ seq = seq.to_s
 clen = seq.size
 
 [
-  /agggtaaa|tttaccct/i,
-  /[cgt]gggtaaa|tttaccc[acg]/i,
-  /a[act]ggtaaa|tttacc[agt]t/i,
-  /ag[act]gtaaa|tttac[agt]ct/i,
-  /agg[act]taaa|ttta[agt]cct/i,
-  /aggg[acg]aaa|ttt[cgt]ccct/i,
-  /agggt[cgt]aa|tt[acg]accct/i,
-  /agggta[cgt]a|t[acg]taccct/i,
-  /agggtaa[cgt]|[acg]ttaccct/i,
+  /agggtaaa|tttaccct/,
+  /[cgt]gggtaaa|tttaccc[acg]/,
+  /a[act]ggtaaa|tttacc[agt]t/,
+  /ag[act]gtaaa|tttac[agt]ct/,
+  /agg[act]taaa|ttta[agt]cct/,
+  /aggg[acg]aaa|ttt[cgt]ccct/,
+  /agggt[cgt]aa|tt[acg]accct/,
+  /agggta[cgt]a|t[acg]taccct/,
+  /agggtaa[cgt]|[acg]ttaccct/,
 ].each { |f| puts "#{f.source} #{seq.scan(f).size}" }
 
 hash = {

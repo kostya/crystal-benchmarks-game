@@ -2,7 +2,7 @@
 
 Compared to C, and Ruby implementations from http://benchmarksgame.alioth.debian.org/ .
 
-Running on Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (Ubuntu 14.04.1 LTS x86_64)
+Running on AMD Ryzen 7 3800X, 16Gb DDR-4 3200 Mghz, Gentoo Linux x86_64
 
 To run and build:
 ```
@@ -15,115 +15,118 @@ sh run.sh
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| Java            | 0.59    | 282.2      |
-| C++             | 2.46    | 33.0       |
-| Crystal         | 3.19    | 46.9       |
-| C               | 5.08    | 32.4       |
-| Ruby            | 27.92   | 115.5      |
+| Java            | 0.46    | 296.5      |
+| C++             | 1.16    | 29.4       |
+| Crystal         | 1.35    | 49.5       |
+| C               | 2.21    | 33.4       |
+| Ruby            | 15.01   | 106.5      |
+| Topaz           | 17.04   | 384.3      |
 
 ### Fannkuchredux
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 2.83    | 0.4        |
-| Crystal         | 4.22    | 1.3        |
-| Ruby            | 130.40  | 18.2       |
+| C               | 2.55    | 0.7        |
+| Crystal         | 2.56    | 3.9        |
+| Topaz           | 7,14    | 32.2       |
+| Ruby            | 75.32   | 9.0        |
 
 ### Fasta
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 2.21    | 0.4        |
-| Crystal         | 4.84    | 1.5        |
-| Ruby            | 81.69   | 162.4      |
+| C               | 1.71    | 0.7        |
+| Crystal         | 2.21    | 3.8        |
+| Topaz           | 17.73   | 192.0      |
+| Ruby            | 57.58   | 149.0      |
 
 ### Knucleotide
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| Go              | 1.70    | 31.8       |
-| Crystal         | 3.82    | 37.9       |
-| Ruby            | 21.82   | 89.2       |
+| Go              | 0.15    | 6.6        |
+| Crystal         | 0.95    | 35.0       |
+| Ruby            | 8.81    | 112.6      |
+| Topaz           | 16.41   | 80.9       |
 
 ### Mandelbrot
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 10.13   | 0.4        |
-| Crystal         | 10.98   | 1.3        |
-| Ruby            | 140.04  | 17.9       |
+| Crystal         | 5.51    | 3.8        |
+| C               | 5.61    | 0.7        |
+| Topaz           | 48.30   | 33.5       |
+| Ruby            | 243.38  | 10.2       |
 
 ### Meteor
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 0.06    | 0.6        |
-| Crystal         | 0.16    | 1.5        |
+| C               | 0.04    | 0.7        |
+| Crystal         | 0.10    | 4.0        |
 
 ### NBody
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 1.59    | 0.4        |
-| Crystal         | 1.93    | 1.3        |
-| Ruby            | 91.01   | 7.3        |
+| C               | 0.76    | 1.0        |
+| Crystal         | 0.99    | 3.9        |
+| Topaz           | 4.74    | 32.7       |
+| Ruby            | 62.68   | 8.8        |
 
 ### Pidigits
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 0.85    | 0.9        |
-| Crystal         | 3.72    | 4.5        |
-| Ruby            | 6.35    | 125.8      |
+| C               | 2.22    | 3.3        |
+| Topaz           | 10.60   | 36.7       |
+| Crystal         | 11.87   | 7.9        |
+| Ruby            | 15.02   | 153.3      |
 
 ### Regexdna
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| Ruby            | 1.96    | 17.9       |
-| C               | 2.07    | 12.2       |
-| Crystal         | 2.15    | 24.2       |
+| Topaz           | 0.53    | 45.8       |
+| Crystal         | 0.84    | 20.7       |
+| C               | 0.92    | 11.1       |
+| Ruby            | 0.93    | 19.0       |
 
 ### Revcomp
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 0.23    | 3.6        |
-| Ruby            | 2.19    | 91.1       |
-| Crystal         | 3.30    | 463.3      |
+| C               | 0.13    | 3.7        |
+| Crystal         | 0.99    | 326.4      |
+| Ruby            | 1.52    | 84.7       |
+| Topaz           | 1.64    | 333.8      |
 
 ### Spectralnorm
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| C               | 6.72    | 0.4        |
-| Crystal         | 6.91    | 1.8        |
-| Ruby            | 220.34  | 11.4       |
+| C               | 1.15    | 0.9        |
+| Crystal         | 1.27    | 4.4        |
+| Topaz           | 12.12   | 33.1       |
+| Ruby            | 188.35  | 10.7       |
 
 ### Threadring
 
 | Language        | Time,s  | Memory, Mb |
 | --------------- | ------- | ---------- |
-| Crystal         | 0.24    | 3.3        |
-| Go              | 1.43    | 2.3        |
-| Erlang          | 1.89    | 17.1       |
-| Scala           | 6.42    | 1.5        |
-| Ruby            | 41.73   | 30.0       |
-| JRuby9K         | 51.48   | 280.6      |
-| JRuby           | 54.86   | 192.7      |
-| Rbx             | 109.96  | 111.5      |
+| Crystal         | 0.27    | 5.9        |
+| Go              | 0.70    | 2.9        |
+| Erlang          | 1.33    | 30.9       |
+| Ruby            | 8.39    | 22.0       |
 
 ## TODO
 * chameneosredux
 
 ## Versions
-* `Crystal 0.19.2 [d81c32c] (2016-09-16)`
-* `gcc (Ubuntu 4.8.2-19ubuntu1) 4.8.2`
-* `ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]`
-* `go version go1.5.3 linux/amd64`
-* `Erlang/OTP 18 [erts-7.2] [source] [64-bit] [smp:4:4] [async-threads:10] [kernel-poll:false]`
-* `Scala code runner version 2.11.6 -- Copyright 2002-2013, LAMP/EPFL`
-* `java version "1.8.0_45 Java(TM) SE Runtime Environment (build 1.8.0_45-b14) Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)`
-* jruby 1.7.20 (1.9.3p551) 2015-05-04 3086e6a on Java HotSpot(TM) 64-Bit Server VM 1.8.0_45-b14 +jit [linux-amd64]
-* jruby 9.0.0.0 (2.2.2) 2015-07-21 e10ec96 Java HotSpot(TM) 64-Bit Server VM 25.45-b02 on 1.8.0_45-b14 +jit [linux-amd64]
-* rubinius 2.2.10 (2.1.0 bf61ae2e 2014-06-27 JI) [x86_64-linux-gnu]
+* `gcc (Gentoo 9.2.0-r2 p3) 9.2.0`
+* `ruby 2.5.8p224 (2020-03-31 revision 67882) [x86_64-linux]`
+* `Crystal 0.33.0 (2020-04-20) LLVM: 9.0.1`
+* `topaz (ruby-2.4.0p0) (git rev b32a257b) [x86_64-linux] (https://github.com/kostya/topaz)`
+* `go version go1.13.9 linux/amd64`
+* `java: openjdk version "1.8.0_242" OpenJDK Runtime Environment (IcedTea 3.15.0) (Gentoo icedtea-3.15.0)`
+* `Erlang/OTP 22 [erts-10.7] [source] [64-bit] [smp:16:16] [ds:16:16:10] [async-threads:1] [hipe]`
