@@ -1,50 +1,52 @@
 # The Computer Language Benchmarks Game
-# http://benchmarksgame.alioth.debian.org
-#
-# contributed by Jesse Millikan
-# Modified by Wesley Moxam
+# http://benchmarksgame.alioth.debian.org/
 
+# Contributed by Akzhan Abdulin.
+# Based on the Java program from Heikki Salokanto, Chandra Sekar, Mike Krüger.
 
-def item_check(left, item, right)
-  return item if left.nil?
-  item + item_check(*left) - item_check(*right)
-end
+class TreeNode
+  attr_accessor :left, :right, :item
 
-def bottom_up_tree(item, depth)
-  return [nil, item, nil] unless depth > 0
-  item_item = 2 * item
-  depth -= 1
-  [bottom_up_tree(item_item - 1, depth), item, bottom_up_tree(item_item, depth)]
-end
-
-max_depth = ARGV[0].to_i
-min_depth = 4
-
-max_depth = min_depth + 2 if min_depth + 2 > max_depth
-
-stretch_depth = max_depth + 1
-stretch_tree = bottom_up_tree(0, stretch_depth)
-
-puts "stretch tree of depth #{stretch_depth}\t check: #{item_check(*stretch_tree)}"
-stretch_tree = nil
-
-long_lived_tree = bottom_up_tree(0, max_depth)
-
-min_depth.step(max_depth + 1, 2) do |depth|
-  iterations = 2**(max_depth - depth + min_depth)
-
-  check = 0
-
-  for i in 1..iterations
-    temp_tree = bottom_up_tree(i, depth)
-    check += item_check(*temp_tree)
-
-    temp_tree = bottom_up_tree(-i, depth)
-    check += item_check(*temp_tree)
+  def self.create(item, depth)
+    TreeNode.new item, depth - 1
   end
 
-  puts "#{iterations * 2}\t trees of depth #{depth}\t check: #{check}"
+  def initialize(item, depth = 0)
+    @item = item
+    if depth > 0
+      self.left = TreeNode.new 2 * item - 1, depth - 1
+      self.right = TreeNode.new 2 * item, depth - 1
+    end
+  end
+
+  def check
+    return item if (lft = left).nil?
+    return item if (rgt = right).nil?
+    lft.check - rgt.check + item
+  end
 end
 
-puts "long lived tree of depth #{max_depth}\t check: #{item_check(*long_lived_tree)}"
+
+puts "stuk4"
+n = (ARGV[0] || 0).to_i
+min_depth = 4
+max_depth = [min_depth + 2, n].max
+stretch_depth = max_depth + 1
+check = TreeNode.create(0, stretch_depth).check
+
+puts "stretch tree of depth #{max_depth + 1}\t check: #{check}"
+
+long_lived_tree = TreeNode.create 0, max_depth
+min_depth.step(max_depth, 2) do |depth|
+  iterations = 1 << (max_depth - depth + min_depth)
+  check = 0
+
+  1.upto(iterations) do |i|
+    check += TreeNode.create(i, depth).check
+    check += TreeNode.create(-i, depth).check
+  end
+  puts "#{iterations << 1}\t trees of depth #{depth}\t check: #{check}"
+end
+
+puts "long lived tree of depth #{max_depth}\t check: #{long_lived_tree.check}"
 

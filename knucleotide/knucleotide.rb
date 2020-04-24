@@ -8,7 +8,7 @@ seq = ""
 
 def frecuency(seq, length)
     n = seq.length - length + 1
-    table = Hash.new { 0 }
+    table = Hash.new(0)
     (0 ... length).each do |f|
         (f ... n).step(length) do |i|
             table[seq[i, length]] += 1
@@ -30,14 +30,13 @@ def find_seq(seq, s)
     puts "#{table[s].to_s}\t#{s.upcase}"
 end
 
-while line = STDIN.gets
-  break if line.start_with?(">THREE")
-end
+start = false
+STDIN.each_line do |line|
+  start = true if line.start_with?(">THREE")
 
-line = STDIN.gets
-while line && !line.start_with?(">")
-  seq += line.chomp
-  line = STDIN.gets
+  if start && !line.start_with?(">")
+    seq << line.chomp
+  end
 end
 
 puts seq.length
