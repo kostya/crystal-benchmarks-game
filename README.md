@@ -98,8 +98,8 @@ sh run.sh
 | --------------- | ------- | ---------- |
 | C               | 0.13    | 3.7        |
 | Crystal         | 0.99    | 326.4      |
+| Topaz           | 1.26    | 297.0      |
 | Ruby            | 1.52    | 84.7       |
-| Topaz           | 1.64    | 333.8      |
 
 ### Spectralnorm
 
@@ -126,7 +126,7 @@ sh run.sh
 * `gcc (Gentoo 9.2.0-r2 p3) 9.2.0`
 * `ruby 2.5.8p224 (2020-03-31 revision 67882) [x86_64-linux]`
 * `Crystal 0.33.0 (2020-04-20) LLVM: 9.0.1`
-* `topaz (ruby-2.4.0p0) (git rev b32a257b) [x86_64-linux] (https://github.com/kostya/topaz)`
+* `topaz (ruby-2.4.0p0) (git rev 028a3e1a) [x86_64-linux] (https://github.com/kostya/topaz)`
 * `go version go1.13.9 linux/amd64`
 * `java: openjdk version "1.8.0_242" OpenJDK Runtime Environment (IcedTea 3.15.0) (Gentoo icedtea-3.15.0)`
 * `Erlang/OTP 22 [erts-10.7] [source] [64-bit] [smp:16:16] [ds:16:16:10] [async-threads:1] [hipe]`
